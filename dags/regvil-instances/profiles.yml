@@ -1,0 +1,14 @@
+regvilinstances:
+  target: dev
+  outputs:
+    dev:
+      database: RegVil_Lakehouse
+      driver: ODBC Driver 18 for SQL Server
+      host: "{{ env_var('HOST') }}"
+      schema: dbo
+      threads: 4
+      type: fabric
+      authentication: ServicePrincipal
+      tenant_id: "{{ env_var('TENANT_ID') }}"
+      client_id: "{{ env_var('CLIENT_ID') }}"
+      client_secret: "{{ env_var('CLIENT_SECRET') }}"
