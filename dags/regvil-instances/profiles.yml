@@ -2,7 +2,7 @@ regvilinstances:
   target: dev
   outputs:
     dev:
-      database: RegVil_Lakehouse
+      database: DataflowsStagingWarehouse
       driver: ODBC Driver 18 for SQL Server
       host: "{{ env_var('HOST') }}"
       schema: dbo

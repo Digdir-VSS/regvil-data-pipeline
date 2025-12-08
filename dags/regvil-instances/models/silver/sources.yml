@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: staging
+    database: RegVil_Lakehouse
+    schema: dbo
+    description: "Staging models from Azure blob storage"
+    tables:
+      - name: regvil_id
+      - name: prod_initiell
+      - name: prod_status
+      - name: prod_oppstart
+      - name: prod_slutt 
+      - name: prod_leveranse

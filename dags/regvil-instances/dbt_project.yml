@@ -17,5 +17,9 @@ clean-targets:
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 models:
-  regvil-instances:
-    materialized: table
+    staging:
+      +materialized: view      # models in models/staging/ → views
+
+    silver:
+      +materialized: table     # models in models/silver/ → tables
+      +schema: silver          # write to RegVil_Lakehouse.silver
