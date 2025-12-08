@@ -8,7 +8,7 @@ DEFAULT_DBT_ROOT_PATH = Path(__file__).parent.parent / "dags" / "regvil-instance
 DBT_ROOT_PATH = Path(os.getenv("DBT_ROOT_PATH", DEFAULT_DBT_ROOT_PATH))
 profile_config = ProfileConfig(
      profile_name="regvilinstances",
-     target_name="fabric-dev",
+     target_name="dev",
      profiles_yml_filepath=DBT_ROOT_PATH / "profiles.yml",
  )
 
